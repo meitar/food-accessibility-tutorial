@@ -51,7 +51,7 @@ Setup your `style.css` setup:
         width: 65%;    
     }```
 
-After the document is ready, instantiate your map object.  Set it's center, and zoom level.  
+After the document is ready, instantiate your map object, and include your JavaScript in your HTML document.  Set it's center, and zoom level.
 
 <ul> **Hint: add the following to your `script.js` file:</ul>
 
@@ -67,6 +67,12 @@ $(document).ready(function() {
     }).addTo(map);
 
 });
+```
+
+<ul> **Hint: add the following to your `index.html` file:</ul>
+
+```html
+<script src="script.js"></script>
 ```
 
 <h2>Going further:</h2>
