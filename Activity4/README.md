@@ -10,7 +10,7 @@ Anything above the threshold will be red, anything below will be green.
 
 Add a results `div` element in your `index.html` file to view the analysis results for step 5.
 
-<ul>**Hint: add to the index.html file:</ul>
+*Hint: add to the index.html file:*
 
 ```html
 <div id="results"></div> <!-- activity 4: add the results div tag -->
@@ -18,7 +18,7 @@ Add a results `div` element in your `index.html` file to view the analysis resul
 
 Style that results `div`:
 
-<ul>**Hint: add the following to your `style.css` file:
+*Hint: add the following to your `style.css` file:*
 
 ```css
 #results {
@@ -30,7 +30,7 @@ Style that results `div`:
 
 In Leaflet, a `style` property passed to the options object of [the `GeoJson` constructor](http://leafletjs.com/reference.html#geojson) can supply a callback function that will style each Feature in your dataset. Add one that changes the color based on a threshold value.
 
-<ul>**Hint: add inside the `success` statement, before the `onEachFeature` property:</ul>
+*Hint: add inside the `success` statement, before the `onEachFeature` property:*
 
 ```javascript
 style: function (feature) {
@@ -46,7 +46,7 @@ style: function (feature) {
 ```
 Create a variable for change the threshold value.
 
-<ul>**Hint: add above the ajax call added in activity 3:</ul>
+*Hint: add above the ajax call added in activity 3:*
 
 ```javascript
 var threshold = 0.15;
