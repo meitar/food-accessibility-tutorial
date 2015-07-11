@@ -22,7 +22,7 @@ In this activity, we'll be calculating poverty rates by dividing the number of p
 
 Just like you added the geojson layer to your map in the last activity, add the census block groups from file below it.
 
-<ul>**Hint: add the following into your `script.js` file:</ul>
+*Hint: add the following into your `script.js` file:*
 
 ```javascript
     var url = "../../data/census.geojson";
