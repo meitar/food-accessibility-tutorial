@@ -14,7 +14,7 @@ $(document).ready(function() {
     }).addTo(map);
 
     // Activity 2
-    var url = "data/retail_grocery.geojson";
+    var url = "../../data/retail_grocery.geojson";
     $.ajax({
         url: url,
         dataType: 'json',
