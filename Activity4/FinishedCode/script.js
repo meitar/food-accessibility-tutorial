@@ -29,7 +29,7 @@ $(document).ready(function() {
     });
 
     // Activity 3 - see the alternate_citysdk_ajax_call.js for the request used to grab the census.geojson data below
-    var threshold = 0.15; // Activity 4
+    var threshold = 0.40; // Activity 4
     var url = "../../data/census.geojson";
     $.ajax({
         url: url,
