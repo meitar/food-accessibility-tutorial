@@ -10,7 +10,7 @@ Start by creating three seperate blanks files: `index.html`, `style.css`, and `s
 
 <ul> **Hint: add the following to your blank `index.html` file</ul>
 
-```
+```html
 <html>
 <head>
 	<title>Fun titles!!</title>
@@ -27,7 +27,7 @@ Include Leaflet CSS & js files in the project.
 
 <ul> **Hint: add the following to the header of your `index.html` file:</ul>
 
-```
+```html
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
 <script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
 ```
@@ -36,26 +36,32 @@ Include jQuery in your header.
 
 <ul> **Hint: add the following to the header of your `index.html` file: </ul>
 
-```<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>```
+```html
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+```
 
 Create a map div element.
 
 <ul> **Hint: add the following inside the body tag of your `index.html`: </ul>
 
-```<div id="map"></div>```
+```html
+<div id="map"></div>
+```
 
 Setup your `style.css` setup:
 
-```#map { height: 600px; 
+```css
+#map { height: 600px; 
         float: left;
         width: 65%;    
-    }```
+    }
+```
 
 After the document is ready, instantiate your map object, and include your JavaScript in your HTML document.  Set it's center, and zoom level.
 
 <ul> **Hint: add the following to your `script.js` file:</ul>
 
-```
+```javascript
 $(document).ready(function() {
 
     var map = L.map('map').setView([35.104602, -106.628414], 11);
