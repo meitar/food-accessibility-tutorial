@@ -32,7 +32,7 @@ Include Leaflet CSS & js files in the project.
 <script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
 ```
 
-Include query in your header.
+Include jQuery in your header.
 
 <ul> **Hint: add the following to the header of your index.html file: </ul>
 
