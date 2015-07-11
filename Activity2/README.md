@@ -22,7 +22,7 @@ The [metadata](http://data.cabq.gov/business/busregistration/MetaData.pdf) was r
 
 We'll make an ajax call to display the grocery stores, create a geojson layer from the result, and add the layer to our map.
 
-*Hint: add the following code to your `script.js` file:
+*Hint: add the following code to your `script.js` file:*
 
 ```javascript
     var url = "../../data/retail_grocery.geojson";
