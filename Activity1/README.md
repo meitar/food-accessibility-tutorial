@@ -28,8 +28,8 @@ Include Leaflet CSS & js files in the project.
 <ul> **Hint: add the following to the header of your `index.html` file:</ul>
 
 ```html
-<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
-<script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
 ```
 
 Include jQuery in your header.
@@ -48,7 +48,7 @@ Create a map div element.
 <div id="map"></div>
 ```
 
-Setup your `style.css` setup:
+Setup your `style.css` setup, and include it in your `index.html` file:
 
 ```css
 #map { height: 600px; 
@@ -57,7 +57,11 @@ Setup your `style.css` setup:
     }
 ```
 
-After the document is ready, instantiate your map object, and include your JavaScript in your HTML document.  Set it's center, and zoom level.
+```html
+<link rel="stylesheet" href="style.css" />
+```
+
+After the document is ready, instantiate your map object, and include your JavaScript in your HTML document.  Set its center, and zoom level.
 
 <ul> **Hint: add the following to your `script.js` file:</ul>
 
