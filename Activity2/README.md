@@ -30,19 +30,13 @@ We'll make an ajax call to display the grocery stores, create a geojson layer fr
         url: url,
         dataType: 'json',
         success: function (data) {
-            groceryGeoJson = data;
-
             geojson = new L.GeoJSON(data, {
-
                 onEachFeature: function(feature, layer){
                     layer.bindPopup(feature.properties.Name);
-
                 }
             });
             geojson.addTo(map);
-
         }
-
     });
 ```
 
