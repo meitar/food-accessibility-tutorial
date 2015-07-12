@@ -14,7 +14,7 @@ It is a JavaScript library that allows you to do front end spatial analysis.
 ## Getting to work:
 
 Add the Turf library to your project.
-<ul>**Hint: add to the header in your `index.html` file:</ul>
+*Hint: add to the header in your `index.html` file:*
 
 ```html
 <!-- #5 add turf -->
@@ -48,7 +48,7 @@ count = turf.count(data, groceryGeoJson, 'pt_count'); // Activity 5: count the n
 
 Filter all of the block groups that don’t have grocery stores in them using [the `remove` method in Turf](http://turfjs.org/static/docs/module-turf_remove.html). How does the `remove` method work?  You feed it geojson, the name of the column, and the value that the column must be equal to in order for that element to be deleted.
 
-<ul>**Hint: add the following to your `script.js` file immediately following the previous `turf` statement:</ul>
+*Hint: add the following to your `script.js` file immediately following the previous `turf` statement:*
 
 ```javascript
 filtered = turf.remove(count, 'pt_count', 0); // Activity 5: get rid of all blocks that don't have a grocery store in them
@@ -58,7 +58,7 @@ filtered = turf.remove(count, 'pt_count', 0); // Activity 5: get rid of all bloc
 
 Declare some variables to calculate your percents and averages.
 
-<ul>**Hint: add the following to your `script.js` file before the census geojson gets created:</ul>
+*Hint: add the following to your `script.js` file before the census geojson gets created:*
 
 ```javascript
 var abovePointCount = 0;
@@ -75,7 +75,7 @@ var percentBelow = 0;
 
 Get the total number of points (grocery stores) that are in blocks groups that are above/below the threshold (poverty) & the total number of polygons (block groups) that are above/below the threshold while the geojson is being created.
 
-<ul>**Hint: add the following to your `script.js` file inside the `style` callback of the `success` statement inside the ajax call:</ul>
+*Hint: add the following to your `script.js` file inside the `style` callback of the `success` statement inside the ajax call:*
 
 ```javascript
 style: function (feature) {
@@ -93,7 +93,7 @@ else {
 
 Calculate the average number of points (grocery stores) inside each of the the block groups categories.
 
-<ul>**Hint: add the following to your `script.js` file immediately after the census geojson is added to the map:</ul>
+*Hint: add the following to your `script.js` file immediately after the census geojson is added to the map:*
 
 ```javascript
 avgAbove = Math.round(abovePointCount/abovePolygonCount);
@@ -102,7 +102,7 @@ avgBelow = Math.round(belowPointCount/belowPolygonCount);
 
 Calculate the percentage of points (grocery stores) inside each of the the block groups categories (above, and below).
 
-<ul>**Hint: add the following to your `script.js` file immediately after above calculations:</ul>
+*Hint: add the following to your `script.js` file immediately after above calculations:*
 
 ```javascript
 percentAbove = Math.floor(100*abovePointCount/(abovePointCount + belowPointCount));
@@ -111,7 +111,7 @@ percentBelow = Math.floor(100*belowPointCount/(abovePointCount + belowPointCount
 
 Display the results to the user in the results `div` element you created in activity 4.
 
-<ul>**Hint: add the following to your `script.js` file:</ul>
+*Hint: add the following to your `script.js` file:*
 
 ```javascript
 $('#results').html("<ul><li>\"High poverty neighborhoods\" contain " + percentAbove + "% of ABQ's grocery stores and have an average of " + avgAbove + " stores in them</li><br><li>" + "\"Low poverty neighborhoods\" contain " + percentBelow + "% of ABQ's grocery stores and have an average of " + avgBelow + " stores in them.</li></ul>");
