@@ -14,6 +14,7 @@ It is a JavaScript library that allows you to do front end spatial analysis.
 ## Getting to work:
 
 Add the Turf library to your project.
+
 *Hint: add to the header in your `index.html` file:*
 
 ```html
