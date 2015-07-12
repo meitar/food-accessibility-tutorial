@@ -49,7 +49,7 @@ Create a variable for change the threshold value.
 *Hint: add above the ajax call added in activity 3:*
 
 ```javascript
-var threshold = 0.15;
+var threshold = 0.4;
 ```
 
 ### Want to see the end product now? Or are you stuck?
